@@ -17,6 +17,7 @@ export default class Point extends GraphicalComponent {
   static get stateVariablesShadowedForReference() { return ["xs", "nDimensions"] };
 
   static primaryStateVariableForDefinition = "coordsShadow";
+  static stateVariableForPropertyValue = "coords";
 
   static createPropertiesObject(args) {
     let properties = super.createPropertiesObject(args);
